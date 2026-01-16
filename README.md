@@ -33,20 +33,20 @@ cd gnn-molecular-ml-tutorial
 #### Create Conda Environment
 
 ```bash
-# 1. conda environment 생성
-conda create -y -n molclr python=3.10
+# conda environment 생성
+conda create -y -n gnn-tutorial python=3.10
 
-# 2. 환경 활성화
-conda activate molclr
+# 환경 활성화
+conda activate gnn-tutorial
 ```
 
 #### Install PyTorch (CUDA 11.8)
 
 ```bash
-# 3. PyTorch with CUDA 11.8 support
+# PyTorch with CUDA 11.8 support
 pip install torch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 --index-url https://download.pytorch.org/whl/cu118
 
-# 4. NumPy (2.x 충돌 방지)
+# NumPy (2.x 충돌 방지)
 pip install numpy==1.26.4
 ```
 
@@ -77,7 +77,7 @@ pip install scikit-learn==1.4.2 pandas matplotlib pyyaml gdown
 ```bash
 # Jupyter kernel 등록
 pip install ipykernel
-python -m ipykernel install --user --name molclr --display-name "Python (molclr)"
+python -m ipykernel install --user --name gnn-tutorial --display-name "Python (gnn-tutorial)"
 ```
 
 ### 3. Sanity Checks
@@ -215,5 +215,5 @@ gnn-molecular-ml-tutorial/
 
 ## 📝 License
 
-튜토리얼 코드는 MIT License를 따릅니다.
-MolCLR 코드는 원저작자의 라이센스를 따릅니다.
+- 튜토리얼 코드는 MIT License를 따릅니다.
+- MolCLR 코드는 원저작자의 라이센스를 따릅니다.
