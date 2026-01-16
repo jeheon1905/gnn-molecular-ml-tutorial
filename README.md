@@ -24,8 +24,10 @@ Graph Neural Networks (GNN)을 활용한 분자 특성 예측 학습 자료입�
 ### 1. Clone Repository
 
 ```bash
-git clone --recurse-submodules https://github.com/<your-username>/gnn-molecular-ml-tutorial.git
+git clone https://github.com/jeheon1905/gnn-molecular-ml-tutorial.git
 cd gnn-molecular-ml-tutorial
+
+git submodule update --init --recursive  # install MolCLR
 ```
 
 ### 2. Environment Setting
@@ -69,7 +71,7 @@ conda install -y -c conda-forge rdkit
 
 # Visualization and ML tools
 conda install -y -c conda-forge seaborn
-pip install scikit-learn==1.4.2 pandas matplotlib pyyaml gdown
+pip install scikit-learn==1.4.2 pandas matplotlib
 ```
 
 #### Install Jupyter Kernel
@@ -151,7 +153,7 @@ RDKit OK: <rdkit.Chem.rdchem.Mol object at 0x...>
 분자 SMILES를 GNN 입력 데이터로 변환하는 전처리 과정을 학습합니다.
 
 ```bash
-jupyter notebook notebooks/rdkit_molecular_graph_tutorial.ipynb
+jupyter lab notebooks/rdkit_molecular_graph_tutorial.ipynb
 ```
 
 **학습 내용:**
@@ -166,7 +168,7 @@ jupyter notebook notebooks/rdkit_molecular_graph_tutorial.ipynb
 GCN(Graph Convolutional Network)의 작동 원리를 단계별로 이해합니다.
 
 ```bash
-jupyter notebook notebooks/gcn_basics_tutorial.ipynb
+jupyter lab notebooks/gcn_basics_tutorial.ipynb
 ```
 
 **학습 내용:**
@@ -181,7 +183,7 @@ jupyter notebook notebooks/gcn_basics_tutorial.ipynb
 사전 학습된 GCN 모델을 FreeSolv 데이터셋에 fine-tuning하고 pretraining 효과를 비교합니다.
 
 ```bash
-jupyter notebook notebooks/freesolv_finetune_tutorial.ipynb
+jupyter lab notebooks/freesolv_finetune_tutorial.ipynb
 ```
 
 **학습 내용:**
