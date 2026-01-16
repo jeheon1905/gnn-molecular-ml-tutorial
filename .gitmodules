@@ -1,0 +1,3 @@
+[submodule "external/MolCLR"]
+	path = external/MolCLR
+	url = https://github.com/yuyangw/MolCLR.git
