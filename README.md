@@ -17,6 +17,14 @@ Graph Neural Networks (GNN)을 활용한 분자 특성 예측 학습 자료입�
   Self-supervised molecular representation learning framework
   (Git submodule)
 
+## 📘 Lecture Notes
+
+본 저장소는 실습용 Jupyter 노트북과 함께,
+강의 내용을 정리한 lecture notes PDF를 포함하고 있습니다.
+
+- **Lecture Notes (PDF)**:  
+  `gnn-molecular-ml-lecture-notes.pdf`
+
 ---
 
 ## 🚀 Setup
@@ -87,7 +95,7 @@ python -m ipykernel install --user --name gnn-tutorial --display-name "Python (g
 #### PyTorch / CUDA Check
 
 ```bash
-python << 'EOF'
+python << EOF
 import numpy as np
 import torch
 
@@ -109,7 +117,7 @@ CUDA available: True
 #### PyTorch Geometric Check
 
 ```bash
-python << 'EOF'
+python << EOF
 import torch
 from torch_geometric.nn import GCNConv
 
@@ -134,7 +142,7 @@ PyG OK: torch.Size([4, 32])
 #### RDKit Check
 
 ```bash
-python << 'EOF'
+python << EOF
 from rdkit import Chem
 from rdkit.Chem import Draw
 m = Chem.MolFromSmiles("CCO")
