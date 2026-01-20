@@ -9,7 +9,7 @@ conda create -y -n gnn-tutorial python=3.10
 conda activate gnn-tutorial
 
 # PyTorch & PyG 설치
-pip install torch==2.2.2 -index-url https://download.pytorch.org/whl/cpu
+pip install torch==2.2.2 --index-url https://download.pytorch.org/whl/cpu
 pip install "numpy<2.0"
 pip install torch_geometric
 
@@ -23,3 +23,4 @@ python -m ipykernel install --user --name gnn-tutorial --display-name "Python (g
 
 # Jupyter lab 실행
 jupyter lab notebooks/rdkit_molecular_graph_tutorial.ipynb
+
