@@ -14,7 +14,7 @@ pip install "numpy<2.0"
 pip install torch_geometric
 
 # Dependencies 설치
-conda install -y -c conda-forge rdkit seaborn
+conda install -y -c conda-forge rdkit=2024.09.6 seaborn
 pip install scikit-learn==1.4.2 pandas matplotlib
 
 # Jupyter kernel 등록
@@ -23,4 +23,5 @@ python -m ipykernel install --user --name gnn-tutorial --display-name "Python (g
 
 # Jupyter lab 실행
 jupyter lab notebooks/rdkit_molecular_graph_tutorial.ipynb
+
 
