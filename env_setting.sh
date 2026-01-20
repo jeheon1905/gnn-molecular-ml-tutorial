@@ -23,10 +23,7 @@ pip install scikit-learn==1.4.2 pandas matplotlib
 
 # Jupyter kernel 등록
 pip install jupyterlab ipykernel
-python -m ipykernel install --user --name gnn-tutorial --display-name "Python (gnn-tutorial)“
+python -m ipykernel install --user --name gnn-tutorial --display-name "Python (gnn-tutorial)"
 
 # Jupyter lab 실행
-jupyter lab notebooks/rdkit_molecular_graph_tutorial.ipynb
-
-
-
+# jupyter lab notebooks/rdkit_molecular_graph_tutorial.ipynb
