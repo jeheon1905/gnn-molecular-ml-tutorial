@@ -1,0 +1,25 @@
+# 코드 다운로드
+git clone https://github.com/jeheon1905/gnn-molecular-ml-tutorial.git
+cd gnn-molecular-ml-tutorial
+
+# conda 환경 생성
+conda create -y -n gnn-tutorial python=3.10
+
+# 환경 활성화
+conda activate gnn-tutorial
+
+# PyTorch & PyG 설치
+pip install torch==2.2.2 -index-url https://download.pytorch.org/whl/cpu
+pip install "numpy<2.0"
+pip install torch_geometric
+
+# Dependencies 설치
+conda install -y -c conda-forge rdkit seaborn
+pip install scikit-learn==1.4.2 pandas matplotlib
+
+# Jupyter kernel 등록
+pip install jupyterlab ipykernel
+python -m ipykernel install --user --name gnn-tutorial --display-name "Python (gnn-tutorial)“
+
+# Jupyter lab 실행
+jupyter lab notebooks/rdkit_molecular_graph_tutorial.ipynb
