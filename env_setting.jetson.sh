@@ -5,6 +5,7 @@ conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
 # 코드 다운로드
 git clone https://github.com/jeheon1905/gnn-molecular-ml-tutorial.git
 cd gnn-molecular-ml-tutorial
+git submodule update --init --recursive  # install MolCLR
 
 # conda 환경 생성
 conda create -y -n gnn-tutorial python=3.10
@@ -27,3 +28,4 @@ python -m ipykernel install --user --name gnn-tutorial --display-name "Python (g
 
 # Jupyter lab 실행
 # jupyter lab notebooks/rdkit_molecular_graph_tutorial.ipynb
+
